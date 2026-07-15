@@ -20,10 +20,12 @@
   .flight b{display:block;font-size:14px;color:var(--accent)}
   .home-btn{display:block;text-align:center;background:var(--accent2);color:#fff;border-radius:12px;padding:11px;font-weight:700;text-decoration:none;margin:4px 0 14px;font-size:14px}
   /* tabs */
-  .tabs{position:sticky;top:0;z-index:10;display:flex;gap:6px;background:var(--bg);padding:10px 0}
-  .tab{flex:1;border:none;background:var(--card);border-radius:10px;padding:9px 2px;font-size:13px;color:var(--sub);font-weight:600;cursor:pointer}
+  .tabs{position:sticky;top:0;z-index:10;display:flex;flex-wrap:wrap;gap:6px;background:var(--bg);padding:10px 0}
+  .tab{flex:1 1 21%;border:none;background:var(--card);border-radius:10px;padding:9px 2px;font-size:13px;color:var(--sub);font-weight:600;cursor:pointer}
   .tab small{display:block;font-size:10.5px;font-weight:400}
   .tab.on{background:var(--accent);color:#fff}
+  .tab.cat{padding:7px 2px;font-size:12.5px}
+  .tab.cat.on{background:var(--accent2)}
   .day{display:none}
   .day.on{display:block;animation:fade .25s}
   @keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1}}
@@ -65,6 +67,10 @@
   <button class="tab" onclick="go(1,this)">7/19<small>日・明洞</small></button>
   <button class="tab" onclick="go(2,this)">7/20<small>一・南怡島</small></button>
   <button class="tab" onclick="go(3,this)">7/21<small>二・古宮</small></button>
+  <button class="tab cat" onclick="go(4,this)">🎒 旅程備選</button>
+  <button class="tab cat" onclick="go(5,this)">🛍️ 購物</button>
+  <button class="tab cat" onclick="go(6,this)">🚕 計程車</button>
+  <button class="tab cat" onclick="go(7,this)">🍗 飲食</button>
 </div>
 
 <!-- DAY 1 -->
@@ -125,6 +131,45 @@
     <div class="btns"><a class="map route" target="_blank" href="https://www.google.com/maps/dir/?api=1&origin=Sindang%20Station&destination=Incheon%20International%20Airport%20Terminal%201&travelmode=transit">🚆 新堂→仁川T1</a></div></div>
 </section>
 
+<!-- 旅程備選 -->
+<section class="day">
+  <div class="stop"><span class="t">7/18 出發日・桃機T1</span><h3>🎁 出境後免費禮物機</h3><p>出境後 B6、B7 登機門之間「3C玩具店」門口機台，玩個小遊戲拍照即可拿兌換券換禮物：免費 eSIM、茶葉、明信片或貼紙（隨機）。18:10 班機，提早到剛好去試手氣。</p>
+    <div class="btns"><a class="map" target="_blank" href="https://www.threads.com/@boruxiao/post/Dav9G4DEz28">🔗 原文</a></div></div>
+  <div class="stop"><span class="t">備選路線</span><h3>🚇 3號線一日備案（下雨或想換口味）</h3><p>行程已含北村、景福宮區、韓屋咖啡與乙支路；若想改走年輕路線，同一條 3 號線往南：<b>新沙洞林蔭道</b>逛街 → <b>狎鷗亭</b> K-Beauty 體驗 → 傍晚<b>漢江盤浦公園</b>看月光彩虹噴泉夜景。從乙支路3街轉 3 號線直達。</p>
+    <div class="btns"><a class="map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Garosu-gil">📍 新沙洞林蔭道</a><a class="map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Apgujeong%20Rodeo%20Street">📍 狎鷗亭</a><a class="map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Banpo%20Hangang%20Park">📍 盤浦漢江公園</a><a class="map" target="_blank" href="https://www.threads.com/@beautylounge_tw/post/DawxEWFk6MU">🔗 原文</a></div></div>
+  <div class="stop"><span class="t">路過就玩</span><h3>🎨 CU 超商・個人色彩鑑定眼影</h3><p>韓國最新流行：CU 便利商店約台幣 50 元就能做個人色彩鑑定＋領對應色眼影，全首爾 CU 都可留意（住宿樓下就有便利商店），兩位女兒必玩。</p>
+    <div class="btns"><a class="map" target="_blank" href="https://www.threads.com/@totoyuna/post/DaxR6H_H4r1">🔗 原文</a></div></div>
+</section>
+
+<!-- 購物 -->
+<section class="day">
+  <div class="stop"><span class="t">Olive Young</span><h3>🎁 店內機器免費領禮物</h3><p>看到店裡的會員機台別錯過：① 連店內 Wi-Fi → ② 掃機台旁 QR Code 註冊 Olive Young 會員 → ③ 註冊完掃機台領免費禮物（常是熱門保養品試用組＋化妝包）。不用消費、不用韓國門號。明洞旗艦店最容易遇到。</p>
+    <div class="btns"><a class="map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Olive%20Young%20Myeongdong%20Town">📍 明洞旗艦店</a><a class="map" target="_blank" href="https://www.threads.com/@lulu_joanne_yao/post/DavKTiJAYRG">🔗 原文</a></div></div>
+  <div class="stop"><span class="t">退稅</span><h3>💳 即時退稅重點</h3><p>Olive Young、大創等單筆滿 ₩15,000 出示護照可當場扣稅；單筆超過 ₩70,000（依店家）走機場退稅，收據別丟。7/21 到機場後先辦退稅再托運。</p></div>
+  <div class="stop"><span class="t">採買點總覽</span><h3>🛍️ 行程內購物時段</h3><p>7/19 明洞（美妝主場）→ 7/20 弘大（潮流小物、娃娃機）→ 7/21 仁寺洞（紀念品、傳統小物）＋ DDP 旁 Doota Mall 深夜也能逛。</p>
+    <div class="btns"><a class="map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Doota%20Mall">📍 Doota Mall</a></div></div>
+</section>
+
+<!-- 計程車 -->
+<section class="day">
+  <div class="stop"><span class="t">車種與費率</span><h3>🚖 搭哪種車？</h3><p><b>一般計程車</b>（白/銀/橘）₩4,800 起跳，最常見最推薦。<b>International Taxi</b> 有中文服務，價格相近。<b>模範計程車</b>（黑色）₩7,000 起跳，車況佳，適合三人＋行李。</p></div>
+  <div class="stop"><span class="t">叫車＆付款</span><h3>📱 Kakao T 最方便</h3><p>路邊攔車、Kakao T App（可綁國際信用卡）、Uber、或請住宿代叫。付款：現金／信用卡／T-money 都可以。</p></div>
+  <div class="stop"><span class="t">注意</span><h3>⚠️ 深夜加成 20–40%</h3><p>22:00–04:00 依時段加收 20–40%——<b>7/18 深夜抵達那趟會遇到</b>，首爾站→住宿約 ₩10,000 是加成後估價，屬正常範圍。只搭跳表合法車、不搭喊價車；上車直接給司機看住宿的韓文地址截圖最保險。</p>
+    <div class="btns"><a class="map" target="_blank" href="https://www.threads.com/@kleam_myeongdong/post/DaxE_Nok_6_">🔗 原文</a></div></div>
+</section>
+
+<!-- 飲食 -->
+<section class="day">
+  <div class="stop food"><span class="t">炸雞指南</span><h3>🍗 韓國炸雞品牌怎麼選（全部無牛豬 ✅）</h3><p>🧀 愛起司 → <b>BHC</b>（뿌링클起司粉）｜🍯 蜂蜜醬油 → <b>橋村 Kyochon</b>｜🧄 濃郁蒜香 → <b>Puradak</b>｜🔥 韓式甜辣 → <b>Pelicana</b>｜🍗 清爽烤雞 → <b>Goobne</b>。7/20 晚上弘大分店最密集，照著點不踩雷。</p>
+    <div class="btns"><a class="map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=BHC%20Chicken%20Hongdae">📍 BHC弘大</a><a class="map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Kyochon%20Chicken%20Hongdae">📍 橋村弘大</a><a class="map" target="_blank" href="https://www.threads.com/@beautylounge_tw/post/DawYUrgk0YK">🔗 原文</a></div></div>
+  <h2 class="sec">🍽️ 飲食備忘（不吃牛・豬・內臟・鰻魚・生食）</h2>
+  <table>
+    <tr><th class="ok">放心吃 ✅</th><td>一隻雞、蔘雞湯、辣炒雞排、炸雞、辣炒年糕、海鮮煎餅、烤魚燉帶魚、紫菜飯捲（去火腿）、雪冰</td></tr>
+    <tr><th class="no">避開 ❌</th><td>部隊鍋、餃子만두（豬肉餡）、血腸순대、雪濃湯、馬鈴薯排骨湯、醬油蟹、鰻魚店</td></tr>
+    <tr><th>實用韓文</th><td>소고기, 돼지고기 못 먹어요（不吃牛豬）｜햄 빼 주세요（去火腿）</td></tr>
+  </table>
+</section>
+
 <h2 class="sec">☕ 韓屋咖啡總表（距住宿距離）</h2>
 <table>
   <tr><th>店家／區域</th><th>排入日</th><th>距住宿</th><th>地圖</th></tr>
@@ -137,13 +182,6 @@
   <tr><td><b>仁寺洞傳統茶屋</b>五味子茶・甜米露</td><td>7/21 午後</td><td>約3.5km・25分</td><td><a class="map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=insadong%20traditional%20tea%20house">📍</a></td></tr>
 </table>
 <div class="note">交通皆為：新堂站 2 號線 → 乙支路3街站（益善洞步行10分；北村・三清洞轉 3 號線到安國站）。距離為路面實際距離估算。</div>
-
-<h2 class="sec">🍽️ 飲食備忘（不吃牛・豬・內臟・鰻魚・生食）</h2>
-<table>
-  <tr><th class="ok">放心吃 ✅</th><td>一隻雞、蔘雞湯、辣炒雞排、炸雞、辣炒年糕、海鮮煎餅、烤魚燉帶魚、紫菜飯捲（去火腿）、雪冰</td></tr>
-  <tr><th class="no">避開 ❌</th><td>部隊鍋、餃子만두（豬肉餡）、血腸순대、雪濃湯、馬鈴薯排骨湯、醬油蟹、鰻魚店</td></tr>
-  <tr><th>實用韓文</th><td>소고기, 돼지고기 못 먹어요（不吃牛豬）｜햄 빼 주세요（去火腿）</td></tr>
-</table>
 
 <div class="note" style="margin-top:14px">💡 三人各一張 T-money／WOWPASS。韓國當地導航建議搭配 Naver Map（Google Map 步行路線在韓國較不準，但定位店家沒問題）。</div>
 
